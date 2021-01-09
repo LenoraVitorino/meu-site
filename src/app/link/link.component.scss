@@ -1,0 +1,13 @@
+@import "./src/variables";
+
+.link{
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    color: $white-color;
+    transition: color $time-transition;
+
+    &:hover{
+        color: $primary-color;
+    }
+}
