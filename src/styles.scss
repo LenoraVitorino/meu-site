@@ -2,14 +2,14 @@
 @import "./variables";
 
 /*
- font-family: 'Montserrat', sans-serif;
-font-family: 'Teko', sans-serif;
- */
+    font-family: 'Montserrat', sans-serif; font-weight: 500/400;
+    font-family: 'Teko', sans-serif; font-weight: 500;
+*/
 
 html, body{
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: normal;
-    color: $black-color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: $blue-color;
     background-color: $white-color;
     margin: 0;
     padding: 0;
@@ -21,15 +21,7 @@ html, body{
 }
 
 body{
-    $space: 2rem;
-
-    margin: 6rem auto 0 auto;
-    padding: 0 $space;
-    max-width: 1200px;
-
-    @media(max-width: $tablet-width){
-        margin-top: $space;
-    }
+    max-width: $desktop-width;
 }
 
 .no-script{
@@ -39,13 +31,9 @@ body{
     font-size: 2rem;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Menlo', monospace;
+    // font-family: 'Menlo', monospace;
     font-weight: 400;
     margin: 0;
-
-    .no-script__strong{
-        font-style: oblique;
-    }
 }
 
 *{
