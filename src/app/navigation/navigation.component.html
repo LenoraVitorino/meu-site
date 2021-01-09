@@ -1,6 +1,6 @@
 <header class="navigation">
     <div class="nabigation__content root__content">
-        <img class="navigation__logo" src="./assets/images/logo.png" alt="Logo da Lenóra Vitorino">
+        <img class="navigation__logo" [src]="appService.logo.src" [alt]="appService.logo.alt">
         <nav>
             <ul class="navigation__list">
                 <li *ngFor="let link of links" class="navigation__item">
