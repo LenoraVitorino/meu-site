@@ -2,10 +2,11 @@
 
 .link{
     text-decoration: none;
-    font-family: 'Teko', sans-serif;
+    font-family: inherit;
     font-weight: 500;
     color: $white-color;
     transition: color $time-transition;
+    font-size: inherit;
 
     &:hover{
         color: $primary-color;
