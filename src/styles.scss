@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./normalize";
+@import "./variables";
+
+/*
+ font-family: 'Montserrat', sans-serif;
+font-family: 'Teko', sans-serif;
+ */
+
+html, body{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
+    color: $black-color;
+    background-color: $white-color;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    @media(max-width: $tablet-width){
+        font-size: 14px;
+    }
+}
+
+body{
+    $space: 2rem;
+
+    margin: 6rem auto 0 auto;
+    padding: 0 $space;
+    max-width: 1200px;
+
+    @media(max-width: $tablet-width){
+        margin-top: $space;
+    }
+}
+
+.no-script{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Menlo', monospace;
+    font-weight: 400;
+    margin: 0;
+
+    .no-script__strong{
+        font-style: oblique;
+    }
+}
+
+*{
+    $selection-color: lighten($primary-color, 12%);
+
+    &::selection{
+        color: $white-color;
+        background-color: $selection-color;
+    }
+
+    outline-color: $selection-color;
+}
