@@ -1,0 +1,36 @@
+@import "./src/variables";
+
+.content{
+    background-color: $white-color;
+    color: $blue-color;
+
+    &.content__dark{
+        background-color: $blue-color;
+        color: $white-color;
+        border-bottom: $border;
+    }
+
+    .content__container{
+        .content__title{
+            font-family: 'Teko', sans-serif;
+            font-weight: 500;
+            font-size: 2rem;
+            margin: 0 0 2rem 0;
+        }
+
+        .content__grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+
+            @media(max-width: $desktop-width){
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            ::ng-deep > *{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

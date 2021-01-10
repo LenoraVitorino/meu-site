@@ -7,11 +7,19 @@
     color: $white-color;
 
     &.brand--large{
-        height: 120px;
+        @mixin brand-size($height, $font-size, $margin-top){
+            height: $height;
 
-        .brand__text{
-            font-size: 56px;
-            margin-top: 16px;
+            .brand__text{
+                font-size: $font-size;
+                margin-top: $margin-top;
+            }
+        }
+
+        @include brand-size(120px, 56px, 16px);
+
+        @media(max-width: $mobile-width){
+            @include brand-size(100px, 46px, 12px);
         }
     }
 
@@ -24,6 +32,6 @@
         line-height: 1;
         font-family: "Teko", sans-serif;
         font-weight: 500;
-        margin: 8px 0 0 12px;
+        margin: 10px 0 0 12px;
     }
 }

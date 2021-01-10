@@ -1,6 +1,7 @@
 @import "./normalize";
 @import "./placeholders";
 @import "./variables";
+@import "./mixins";
 
 /*
     font-family: 'Montserrat', sans-serif; font-weight: 500/400;
@@ -60,6 +61,14 @@ noscript{
     max-width: $desktop-width;
     margin: 0 auto;
     padding: 0 1rem;
+
+    &.root__content--main{
+        @include padding-top-and-bottom(8rem);
+
+        @media(max-width: $desktop-width){
+            @include padding-top-and-bottom(4rem);
+        }
+    }
 }
 
 img{
