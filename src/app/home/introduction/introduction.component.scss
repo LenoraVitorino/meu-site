@@ -1,0 +1,51 @@
+@import "./src/variables";
+@import "./src/mixins";
+
+.introduction{
+    border-bottom: $border;
+    padding: 2rem;
+    background-image: url("../../../assets/images/background.png");
+    background-color: $blue-color;
+
+    @include background-configurations();
+
+    .introduction__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 600px;
+        position: relative;
+
+        .introduction__text{
+            color: $white-color;
+            text-align: center;
+        }
+
+        > *:not(:first-child){
+            margin: 2rem 0 0 0;
+        }
+
+        .introduction__arrow{
+            position: absolute;
+            bottom: 0;
+
+            @keyframes moving{
+                from{
+                    top: 5px;
+                }
+
+                to{
+                    top: -5px;
+                }
+            }
+
+            .introduction__arrow-image{
+                height: 50px;
+                position: relative;
+
+                animation: moving infinite alternate 1s;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "./src/variables";
+
+.button{
+    background-color: transparent;
+    border: $border;
+    display: flex;
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: $primary-color;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    transition: color $time-transition, background-color $time-transition;
+
+    &:hover{
+        color: $blue-color;
+        background-color: $primary-color;
+    }
+}

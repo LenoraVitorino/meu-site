@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { AppService } from '../app.service';
 
@@ -8,5 +8,7 @@ import { AppService } from '../app.service';
     styleUrls: ['./brand.component.scss']
 })
 export class BrandComponent{
+    @Input() large: boolean;
+
     constructor(public appService: AppService){}
 }

@@ -1,20 +1,18 @@
 <footer class="footer">
-    <div class="footer__background">
-        <div class="footer__content root__content">
-            <app-brand></app-brand>
-            <p class="footer__text">
-                Em 2021, desenhado por Lenóra Vitorino e
-                desenvolvido por <app-link text="João Paulo Hotequil" href="https://hotequil.tech" target="_blank"></app-link>.
-                Todos os direitos reservados.
-            </p>
-            <ul class="footer__list">
-                <li *ngFor="let link of links" class="footer__item">
-                    <a [href]="link.href" [target]="link.target">
-                        <span class="footer__item-text">{{ link.text }}</span>
-                        <img class="footer__item-image" [src]="link.logo.src" [alt]="link.logo.alt">
-                    </a>
-                </li>
-            </ul>
+    <div class="footer__content root__content">
+        <app-brand></app-brand>
+        <p class="footer__text">
+            Em 2021, desenhado por Lenóra Vitorino e
+            desenvolvido por <app-link text="João Paulo Hotequil" href="https://hotequil.tech" target="_blank"></app-link>.
+            Todos os direitos reservados.
+        </p>
+        <ul class="footer__list">
+            <li *ngFor="let link of links" class="footer__item">
+                <a [href]="link.href" [target]="link.target">
+                    <span class="footer__item-text">{{ link.text }}</span>
+                    <img class="footer__item-image" [src]="link.logo.src" [alt]="link.logo.alt">
+                </a>
+            </li>
+        </ul>
         </div>
-    </div>
 </footer>

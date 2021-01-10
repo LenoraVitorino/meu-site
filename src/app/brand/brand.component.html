@@ -1,4 +1,4 @@
-<div class="brand">
+<div class="brand" [ngClass]="large ? 'brand--large' : ''">
     <img class="brand__image" [src]="appService.logo.src" [alt]="appService.logo.alt">
     <h1 class="brand__text">Lenóra <br>Vitorino</h1>
 </div>

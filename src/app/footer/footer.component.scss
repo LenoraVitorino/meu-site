@@ -1,88 +1,83 @@
 @import "./src/variables";
+@import "./src/mixins";
 
-%center{
+%center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer{
+.footer {
+    width: 100%;
     min-height: 150px;
+    background-image: url("../../assets/images/background.png");
+    padding: 1rem 0;
     background-color: $blue-color;
+    @extend %center;
+
+    @include background-configurations();
 
     @extend %center;
 
-    .footer__background{
-        width: 100%;
-        min-height: 150px;
-        background-image: url("../../assets/images/background.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: repeat;
-        padding: 1rem 0;
+    .footer__content {
+        $break: 1000px;
 
-        @extend %center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: $white-color;
 
-        .footer__content{
-            $break: 1000px;
+        @media(max-width: $break) {
+            flex-direction: column;
+        }
 
+        .footer__text {
+            max-width: 300px;
+            font-size: .85rem;
+            text-align: center;
+            line-height: 1.35;
+        }
+
+        > * {
+            margin: 0 2rem;
+
+            @media(max-width: $break) {
+                margin: 1rem 0;
+
+                &.footer__text {
+                    order: 3;
+                }
+            }
+        }
+
+        .footer__list {
+            padding: 0;
             display: flex;
             align-items: center;
             justify-content: space-around;
-            color: $white-color;
 
-            @media(max-width: $break){
-                flex-direction: column;
-            }
+            .footer__item {
+                list-style: none;
+                transition: opacity $time-transition;
 
-            .footer__text{
-                max-width: 300px;
-                font-size: .85rem;
-                text-align: center;
-                line-height: 1.35;
-            }
-
-            > *{
-                margin: 0 2rem;
-
-                @media(max-width: $break){
-                    margin: 1rem 0;
-
-                    &.footer__text{
-                        order: 3;
-                    }
+                &:not(:last-child) {
+                    margin-right: 1rem;
                 }
-            }
 
-            .footer__list{
-                padding: 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
+                &:hover {
+                    opacity: .85;
+                }
 
-                .footer__item{
-                    list-style: none;
-                    transition: opacity $time-transition;
+                .footer__item-image {
+                    width: 40px;
+                }
 
-                    &:not(:last-child){
-                        margin-right: 1rem;
-                    }
-
-                    &:hover{
-                        opacity: .85;
-                    }
-
-                    .footer__item-image{
-                        width: 40px;
-                    }
-
-                    .footer__item-text{
-                        font-size: 1rem;
-                        position: absolute;
-                        left: -9999px;
-                        top: -9999px;
-                        color: transparent;
-                    }
+                .footer__item-text {
+                    font-size: 1rem;
+                    position: absolute;
+                    left: -9999px;
+                    top: -9999px;
+                    color: transparent;
                 }
             }
         }
