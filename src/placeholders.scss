@@ -1,0 +1,19 @@
+%center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%hide-text{
+    font-size: 1px;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    color: transparent;
+}
+
+%background-configurations{
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}

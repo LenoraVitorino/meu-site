@@ -1,5 +1,5 @@
 @import "./src/variables";
-@import "./src/mixins";
+@import "./src/placeholders";
 
 .introduction{
     border-bottom: $border;
@@ -7,7 +7,7 @@
     background-image: url("../../../assets/images/background.png");
     background-color: $blue-color;
 
-    @include background-configurations();
+    @extend %background-configurations;
 
     .introduction__content{
         display: flex;
@@ -40,11 +40,15 @@
                 }
             }
 
+            .introduction__arrow-text{
+                @extend %hide-text;
+            }
+
             .introduction__arrow-image{
                 height: 50px;
                 position: relative;
 
-                animation: moving infinite alternate 1s;
+                animation: moving infinite alternate .85s;
             }
         }
     }

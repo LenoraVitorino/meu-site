@@ -1,11 +1,5 @@
 @import "./src/variables";
-@import "./src/mixins";
-
-%center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@import "./src/placeholders";
 
 .footer {
     width: 100%;
@@ -15,7 +9,7 @@
     background-color: $blue-color;
     @extend %center;
 
-    @include background-configurations();
+    @extend %background-configurations;
 
     @extend %center;
 
@@ -65,7 +59,7 @@
                 }
 
                 &:hover {
-                    opacity: .85;
+                    opacity: .75;
                 }
 
                 .footer__item-image {
@@ -73,11 +67,7 @@
                 }
 
                 .footer__item-text {
-                    font-size: 1rem;
-                    position: absolute;
-                    left: -9999px;
-                    top: -9999px;
-                    color: transparent;
+                    @extend %hide-text
                 }
             }
         }
