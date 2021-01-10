@@ -12,6 +12,9 @@
     justify-content: center;
     padding: .85rem 1.75rem;
     transition: color $time-transition, background-color $time-transition;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
 
     &:hover{
         color: $blue-color;
