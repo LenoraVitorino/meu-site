@@ -1,7 +1,8 @@
 <section class="content" [ngClass]="dark ? 'content__dark' : ''" id="id">
     <div class="content__container root__content root__content--main">
         <h2 class="content__title">{{ title }}</h2>
-        <article class="content__grid">
+        <h3 class="content__sub-title" *ngIf="subTitle">{{ subTitle }}</h3>
+        <article class="content__grid" [ngClass]="classes">
             <ng-content></ng-content>
         </article>
     </div>

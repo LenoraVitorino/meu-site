@@ -8,10 +8,11 @@ import {RouterModule} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import {ContentModule} from '../content/content.module';
 import { ServicesComponent } from './services/services.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, IntroductionComponent, AboutComponent, ServicesComponent],
+  declarations: [HomeComponent, IntroductionComponent, AboutComponent, ServicesComponent, JobsComponent],
     imports: [
         CommonModule,
         BrandModule,

@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ContentComponent{
     @Input() title = '';
+    @Input() subTitle = '';
+    @Input() classes = '';
     @Input() dark = false;
     @Input() id = '';
 }

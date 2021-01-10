@@ -3,11 +3,12 @@
 .content{
     background-color: $white-color;
     color: $blue-color;
+    position: relative;
 
     &.content__dark{
         background-color: $blue-color;
         color: $white-color;
-        border-bottom: $border;
+
         .content__container{
             .content__title {
                 color: $primary-color;
@@ -22,6 +23,12 @@
             font-size: 2rem;
             margin: 0 0 2rem 0;
             text-transform: uppercase;
+        }
+
+        .content__sub-title{
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 0 1rem 0;
         }
 
         .content__grid{
