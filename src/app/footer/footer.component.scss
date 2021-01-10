@@ -39,6 +39,7 @@
                 max-width: 300px;
                 font-size: .85rem;
                 text-align: center;
+                line-height: 1.35;
             }
 
             > *{
@@ -46,6 +47,10 @@
 
                 @media(max-width: $break){
                     margin: 1rem 0;
+
+                    &.footer__text{
+                        order: 3;
+                    }
                 }
             }
 
@@ -68,7 +73,7 @@
                     }
 
                     .footer__item-image{
-                        width: 50px;
+                        width: 40px;
                     }
 
                     .footer__item-text{
