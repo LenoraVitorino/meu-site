@@ -2,3 +2,8 @@
     padding-top: $value;
     padding-bottom: $value;
 }
+
+@mixin size($size){
+    width: $size;
+    height: $size;
+}

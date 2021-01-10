@@ -14,5 +14,5 @@ export class JobsComponent{
         { text: 'La Linda Boutique' },
         { text: 'Ketlin Andrieli Makeup' },
         { text: 'Lenóra Vitorino Design' }
-    ]
+    ];
 }
