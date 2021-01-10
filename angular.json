@@ -24,7 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-                "source/_redirects",
+                "src/_redirects",
                 "src/assets"
             ],
             "styles": [
@@ -87,7 +87,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-                "source/_redirects",
+                "src/_redirects",
                 "src/assets"
             ],
             "styles": [
