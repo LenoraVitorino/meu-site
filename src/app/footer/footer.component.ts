@@ -10,7 +10,7 @@ export class FooterComponent{
     links: Link[] = [
         {
             text: 'Behance',
-            href: '',
+            href: 'https://www.behance.net/lenoravitorino/appreciated',
             target: '_blank',
             logo: {
                 src: './assets/images/behance.svg',
@@ -19,7 +19,7 @@ export class FooterComponent{
         },
         {
             text: 'Instagram',
-            href: '',
+            href: 'https://www.instagram.com/vitorino_lenora',
             target: '_blank',
             logo: {
                 src: './assets/images/instagram.svg',
@@ -28,7 +28,7 @@ export class FooterComponent{
         },
         {
             text: 'Facebook',
-            href: '',
+            href: 'https://www.facebook.com/lenora.vitorino',
             target: '_blank',
             logo: {
                 src: './assets/images/facebook.svg',

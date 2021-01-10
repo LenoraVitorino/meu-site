@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ContentComponent{
     @Input() title: string|undefined;
     @Input() dark: boolean|undefined;
+    @Input() id: string|undefined;
 }

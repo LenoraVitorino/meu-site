@@ -12,9 +12,9 @@ export class NavigationComponent{
     constructor(public appService: AppService){}
 
     links: Link[] = [
-        { text: 'Home', href: '', target: '_self' },
-        { text: 'Sobre', href: '', target: '_self' },
-        { text: 'Serviços', href: '', target: '_self' },
-        { text: 'Jobs', href: '', target: '_self' },
+        { text: 'Home', href: '#home', target: '_self' },
+        { text: 'Sobre', href: '#sobre', target: '_self' },
+        { text: 'Serviços', href: '#servicos', target: '_self' },
+        { text: 'Jobs', href: '#jobs', target: '_self' },
     ];
 }
