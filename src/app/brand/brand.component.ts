@@ -8,7 +8,7 @@ import { AppService } from '../app.service';
     styleUrls: ['./brand.component.scss']
 })
 export class BrandComponent{
-    @Input() large: boolean;
+    @Input() large = false;
 
     constructor(public appService: AppService){}
 }

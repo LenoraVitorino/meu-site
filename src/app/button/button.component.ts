@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent{
-    @Input() target: string;
-    @Input() href: string;
+    @Input() target = '';
+    @Input() href = '';
 }

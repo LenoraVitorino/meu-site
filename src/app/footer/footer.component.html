@@ -10,7 +10,7 @@
             <li *ngFor="let link of links" class="footer__item">
                 <a [href]="link.href" [target]="link.target">
                     <span class="footer__item-text">{{ link.text }}</span>
-                    <img class="footer__item-image" [src]="link.logo.src" [alt]="link.logo.alt">
+                    <img class="footer__item-image" [src]="link.logo?.src" [alt]="link.logo?.alt">
                 </a>
             </li>
         </ul>
