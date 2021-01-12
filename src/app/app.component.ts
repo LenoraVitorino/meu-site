@@ -19,7 +19,7 @@ export class AppComponent implements AfterViewInit{
 
                     $('html, body').animate({
                         scrollTop: $(hash)?.offset?.()?.top
-                    }, 1000);
+                    }, 375);
                 }
             });
         });

@@ -33,12 +33,12 @@
             margin: 0;
 
             @keyframes moving{
-                from{
-                    bottom: 10px;
+                0%{
+                    bottom: 0;
                 }
 
-                to{
-                    bottom: 0;
+                100%{
+                    bottom: 12px;
                 }
             }
 
@@ -49,8 +49,7 @@
             .introduction__arrow-image{
                 height: 50px;
                 position: relative;
-
-                animation: moving infinite alternate .85s;
+                animation: moving infinite alternate .675s;
             }
         }
     }
