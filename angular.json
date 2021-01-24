@@ -25,6 +25,7 @@
             "aot": true,
             "assets": [
                 "src/_redirects",
+                "src/robots.txt",
                 "src/assets"
             ],
             "styles": [
@@ -88,6 +89,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
                 "src/_redirects",
+                "src/robots.txt",
                 "src/assets"
             ],
             "styles": [
