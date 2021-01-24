@@ -9,10 +9,10 @@ import {Jobs} from './jobs';
 })
 export class JobsComponent{
     list: Jobs[] = [
-        { text: 'Freedom Lingerie' },
-        { text: 'Bell Beach Wear' },
-        { text: 'La Linda Boutique' },
-        { text: 'Ketlin Andrieli Makeup' },
-        { text: 'Lenóra Vitorino Design' }
+        { src: './assets/images/bell-beach-wear.jpg', href: '', text: 'Freedom Lingerie' },
+        { src: './assets/images/bell-beach-wear.jpg', href: '', text: 'Bell Beach Wear' },
+        { src: './assets/images/bell-beach-wear.jpg', href: '', text: 'La Linda Boutique' },
+        { src: './assets/images/bell-beach-wear.jpg', href: '', text: 'Ketlin Andrieli Makeup' },
+        { src: './assets/images/bell-beach-wear.jpg', href: '', text: 'Lenóra Vitorino Design' }
     ];
 }
