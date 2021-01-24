@@ -36,8 +36,14 @@
     <section class="jobs__images jobs__images--border">
         <div class="root__content root__content--main jobs__images__content jobs__images__content--reverse">
             <div class="jobs__treatment-container">
-                <div class="jobs__image jobs__image--first"></div>
-                <div class="jobs__image jobs__image--second"></div>
+                <div class="jobs__image jobs__image--first"
+                     aria-label="Imagem da modelo antes do tratamento de imagem"
+                     [ngStyle]="{'background-image': 'url(./assets/images/model-before.jpg)'}">
+                </div>
+                <div class="jobs__image jobs__image--second"
+                     aria-label="Imagem da modelo depois do tratamento de imagem"
+                     [ngStyle]="{'background-image': 'url(./assets/images/model-after.jpg)'}">
+                </div>
             </div>
             <h4 class="jobs__title">
                 Tratamento de <br>

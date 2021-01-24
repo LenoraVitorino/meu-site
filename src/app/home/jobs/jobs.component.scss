@@ -98,6 +98,10 @@
                     $time: .5s;
                     $up: -($half-displacement);
 
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
                     @mixin image-up($top, $left, $top-to-up){
                         top: $top;
                         left: $left;
