@@ -183,21 +183,44 @@
                 @media(max-width: $break-width){
                     grid-template-columns: repeat(1, 1fr);
                     width: 100%;
+
+                    .jobs__list-item{
+                        margin: 0 auto !important;
+                    }
                 }
 
                 .jobs__list-item{
                     $size: 300px;
 
                     list-style: none;
-                    width: $size;
+                    width: $size !important;
                     height: $size;
                     background-color: $white-color;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+                    margin: 0 auto;
 
                     @extend %item;
+
+                    @media(max-width: $desktop-width){
+                        &:nth-child(2){
+                            grid-row: 3 / 4 !important;
+                            height: $size * 2 !important;
+                            grid-column: 1 / 3;
+                        }
+
+                        &:nth-child(odd){
+                            margin-left: 0;
+                            margin-right: auto;
+                        }
+
+                        &:nth-child(even):not(:nth-child(2)), &:first-child{
+                            margin-right: 0;
+                            margin-left: auto;
+                        }
+                    }
 
                     &:nth-child(2){
                         grid-row: 2 / 4;
@@ -227,15 +250,18 @@
                             height: $size;
                             grid-row: auto;
                         }
-
-                        &:last-child{
-                            grid-column: 1 / 3;
-                        }
                     }
 
                     @media(max-width: $break-width){
                         grid-column: auto !important;
                         grid-row: auto !important;
+                    }
+
+                    @media(max-width: $mobile-width){
+                        $size: 280px;
+
+                        width: $size !important;
+                        height: $size;
                     }
                 }
             }
@@ -289,6 +315,10 @@
                     .jobs__grid-item {
                         height: 300px;
 
+                        &:nth-child(2){
+                            grid-row: 1 / 2;
+                        }
+
                         &:first-child {
                             grid-column: auto;
                         }
@@ -306,6 +336,10 @@
                         height: 280px;
                         grid-column: auto !important;
                         grid-row: auto !important;
+
+                        &:nth-child(2){
+                            grid-row: 1 / 2 !important;
+                        }
                     }
                 }
             }

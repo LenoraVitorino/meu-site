@@ -12,13 +12,13 @@ export class JobsComponent{
         { src: './assets/images/freedom-lingerie.jpg', href: '', text: 'Freedom Lingerie' },
         { src: './assets/images/bell-beach-wear.jpg', href: '', text: 'Bell Beach Wear' },
         { src: './assets/images/ketlin-andriele-makeup.jpg', href: '', text: 'Ketlin Andriele Makeup' },
-        { src: './assets/images/lenora-vitorino.jpg', href: '', text: 'Lenóra Vitorino Design' },
-        { src: './assets/images/la-linda-boutique.jpg', href: '', text: 'La Linda Boutique' }
+        { src: './assets/images/la-linda-boutique.jpg', href: '', text: 'La Linda Boutique' },
+        { src: './assets/images/lenora-vitorino.jpg', href: '', text: 'Lenóra Vitorino Design' }
     ];
 
     arts: Jobs[] = [
         { src: './assets/images/hookah.jpg', href: '', text: 'Narguilé' },
-        { src: './assets/images/bell-beach-wear.jpg', href: '', text: 'Bell Beach Wear' },
+        { src: './assets/images/acai.jpg', href: '', text: 'Açaí' },
         { src: './assets/images/hamburger.jpg', href: '', text: 'Hambúrguer' },
         { src: './assets/images/pet-shop.jpg', href: '', text: 'Pet shop' },
         { src: './assets/images/beer.jpg', href: '', text: 'Cerveja' }
