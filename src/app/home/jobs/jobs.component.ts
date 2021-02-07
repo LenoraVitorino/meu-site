@@ -25,10 +25,10 @@ export class JobsComponent{
     ];
 
     arts: Jobs[] = [
-        { src: './assets/images/hookah.jpg', href: 'https://www.behance.net/lenoravitorino', text: 'Narguilé' },
-        { src: './assets/images/acai.jpg', href: 'https://www.behance.net/lenoravitorino', text: 'Açaí' },
-        { src: './assets/images/hamburger.jpg', href: 'https://www.behance.net/lenoravitorino', text: 'Hambúrguer' },
-        { src: './assets/images/pet-shop.jpg', href: 'https://www.behance.net/lenoravitorino', text: 'Pet shop' },
-        { src: './assets/images/beer.jpg', href: 'https://www.behance.net/lenoravitorino', text: 'Cerveja' }
+        { src: './assets/images/hookah.jpg', href: 'https://www.instagram.com/lenoravitorino.design', text: 'Narguilé' },
+        { src: './assets/images/acai.jpg', href: 'https://www.instagram.com/lenoravitorino.design', text: 'Açaí' },
+        { src: './assets/images/hamburger.jpg', href: 'https://www.instagram.com/lenoravitorino.design', text: 'Hambúrguer' },
+        { src: './assets/images/pet-shop.jpg', href: 'https://www.instagram.com/lenoravitorino.design', text: 'Pet shop' },
+        { src: './assets/images/beer.jpg', href: 'https://www.instagram.com/lenoravitorino.design', text: 'Cerveja' }
     ];
 }
