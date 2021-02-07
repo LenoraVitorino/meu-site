@@ -7,7 +7,7 @@
                     [ngStyle]="{'background-image': 'url(' + item.src + ')'}">
                     <a class="jobs__grid-item-link"
                        target="_blank"
-                       [routerLink]="item.href">
+                       [href]="item.href">
                         <h4 class="jobs__grid-item-text">{{ item.text }}</h4>
                     </a>
                 </li>
@@ -26,7 +26,7 @@
                     [ngStyle]="{'background-image': 'url(' + item.src + ')'}">
                     <a class="jobs__list-item-link"
                        target="_blank"
-                       [routerLink]="item.href">
+                       [href]="item.href">
                         <h4 class="jobs__list-item-text">{{ item.text }}</h4>
                     </a>
                 </li>

@@ -10,7 +10,7 @@ export class FooterComponent{
     links: Link[] = [
         {
             text: 'Behance',
-            href: 'https://www.behance.net/lenoravitorino/appreciated',
+            href: 'https://www.behance.net/lenoravitorino',
             target: '_blank',
             logo: {
                 src: './assets/images/behance.svg',
@@ -18,21 +18,21 @@ export class FooterComponent{
             }
         },
         {
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/len%C3%B3ra-vitorino-9283981aa',
+            target: '_blank',
+            logo: {
+                src: './assets/images/linkedin.svg',
+                alt: 'Logo do LinkedIn'
+            }
+        },
+        {
             text: 'Instagram',
-            href: 'https://www.instagram.com/vitorino_lenora',
+            href: 'https://www.instagram.com/lenoravitorino.design',
             target: '_blank',
             logo: {
                 src: './assets/images/instagram.svg',
                 alt: 'Logo do Instagram'
-            }
-        },
-        {
-            text: 'Facebook',
-            href: 'https://www.facebook.com/lenora.vitorino',
-            target: '_blank',
-            logo: {
-                src: './assets/images/facebook.svg',
-                alt: 'Logo do Facebook'
             }
         }
     ];

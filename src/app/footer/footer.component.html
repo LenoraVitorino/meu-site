@@ -8,7 +8,7 @@
         </p>
         <ul class="footer__list">
             <li *ngFor="let link of links" class="footer__item">
-                <a rel="noopener" [href]="link.href" [target]="link.target">
+                <a rel="noopener" class="footer__link" [href]="link.href" [target]="link.target">
                     <span class="footer__item-text">{{ link.text }}</span>
                     <img class="footer__item-image" [src]="link.logo?.src" [alt]="link.logo?.alt">
                 </a>

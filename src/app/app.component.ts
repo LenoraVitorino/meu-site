@@ -14,7 +14,7 @@ export class AppComponent implements AfterViewInit{
             $('a').on('click', (event: ClickEvent) => {
                 const hash = event.currentTarget.hash || event.target.hash;
 
-                if (hash !== '') {
+                if (hash){
                     event.preventDefault();
 
                     $('html, body').animate({
